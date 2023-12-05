@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .bar-contain{
+    position: relative;
+  }
+  .nav-container{
+    position: absolute;
+    top: 82px;
+    right: 0;
+    background-color: #0206156b;
+    width: 50%;
+    height: 1450px;
+    
+  }
+  .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
