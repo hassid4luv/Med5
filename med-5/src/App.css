@@ -54,6 +54,6 @@
     gap: 50px;
   }
   .nav-container.active {
-    transform: translateX(0); /* Slide in from the right */
+    transform: translateX(0); 
   }
 }
