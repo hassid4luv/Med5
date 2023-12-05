@@ -53,8 +53,6 @@
     flex-direction: column;
     gap: 50px;
   }
-
-  /* Add a class to toggle the menu */
   .nav-container.active {
     transform: translateX(0); /* Slide in from the right */
   }
