@@ -16,7 +16,11 @@ const Navbar = () => {
           <img src="./src/assests/logo.svg" alt="med5logo" />
         </div>
        
-        <nav className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:items-center md:w-auto nav-container`}>
+        <nav
+          className={`md:flex ${
+            isMenuOpen ? 'active' : ''
+          } md:items-center md:w-auto nav-container`}
+        >
           <ul className="md:flex flex-col md:flex-row md:space-x-4 md:w-auto menu">
             <li>
               <Link to="/">Home</Link>

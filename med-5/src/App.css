@@ -4,22 +4,58 @@
   padding: 0;
   text-align: center;
 }
+
+@keyframes roll {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rolling-image {
+  animation: roll 5s linear infinite; /* Adjust the duration (5s in this example) as needed */
+}
+
+
+@keyframes scaleIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
+
+.logo-animation {
+  animation: scaleIn 3s ease-in-out infinite; 
+}
+
 @media (max-width: 768px) {
-  .bar-contain{
+  .bar-contain {
     position: relative;
   }
-  .nav-container{
+
+  .nav-container {
     position: absolute;
     top: 82px;
     right: 0;
     background-color: #0206156b;
     width: 50%;
     height: 1450px;
-    
+    transform: translateX(100%); 
+    transition: transform 1.2s ease-in;
   }
-  .menu{
+
+  .menu {
     display: flex;
     flex-direction: column;
     gap: 50px;
+  }
+
+  /* Add a class to toggle the menu */
+  .nav-container.active {
+    transform: translateX(0); /* Slide in from the right */
   }
 }

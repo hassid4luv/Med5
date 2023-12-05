@@ -11,7 +11,7 @@ const LandingPage = () => {
             </section>
             <section className="flex flex-col justify-center items-center gap-6 lg:flex-row sect">
                 <div>
-                    <img src="./src/assests/Group 6.svg" alt="" className=" lg:max-w-sm"/>
+                    <img src="./src/assests/Group 6.svg" alt="" className=" lg:max-w-sm  rolling-image"/>
                 </div>
                 <div className="flex flex-col italic lg:items-start lg:p-20 lg:text-2xl lg:w-3/5 lg:h-96">
                     <h4 className="text-3xl">MED 5</h4>
@@ -24,16 +24,20 @@ const LandingPage = () => {
                     </p>
                 </div>
             </section>
-            <section className="sect">
-                <h4>Hospital & Organization</h4>
-                <div className="grid grid-cols-2 md:flex md:flex-row lg:flex lg:justify-center lg:items-center lg:gap-10">
-                    <img src="./src/assests/FCC-logo.svg" alt="fcclogo" className="logo"/>
-                    <img src="./src/assests/images.svg" alt="images" className="logo"/>
-                    <img src="./src/assests/redding.svg" alt="reddington" className="logo"/>
-                    <img src="./src/assests/New-Logo-White@3x-2048x871 1.svg" alt="newlogo" className="logo" />
-                </div>
-                <button className="btn">View List</button>
-            </section>
+            <section className="sect fade-in">
+      <h4>Hospital & Organization</h4>
+      <div className="grid grid-cols-2 md:flex md:flex-row lg:flex lg:justify-center lg:items-center lg:gap-10">
+        <img src="./src/assests/FCC-logo.svg" alt="fcclogo" className="logo logo-animation" />
+        <img src="./src/assests/images.svg" alt="images" className="logo logo-animation" />
+        <img src="./src/assests/redding.svg" alt="reddington" className="logo logo-animation" />
+        <img
+          src="./src/assests/New-Logo-White@3x-2048x871 1.svg"
+          alt="newlogo"
+          className="logo logo-animation"
+        />
+      </div>
+      <button className="btn">View List</button>
+    </section>
             <section className="sect">
                 <div>
                     <img src="./src/assests/image-nurse.png" alt="nurse" />
